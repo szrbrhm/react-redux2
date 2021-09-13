@@ -21,8 +21,9 @@ export const sellPhone = (number = 1) => {
     };
 };
 
-export const sellWatch = () => {
+export const sellWatch = (number = 1) => {
     return{
-        type: SELL_WATCH
+        type: SELL_WATCH,
+        payload: number,
     };
 };

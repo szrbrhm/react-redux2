@@ -9,7 +9,7 @@ const watchReducer = (state = initialState, action) => {
     case SELL_WATCH:
       return {
         ...state,
-        numberOfWatch: state.numberOfWatch - 1,
+        numberOfWatch: state.numberOfWatch - action.payload,
       };
 
     default:

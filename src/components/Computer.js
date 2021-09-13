@@ -11,7 +11,7 @@ const Computer = () => {
             <h2>Computers -- Hooks ---</h2>
             <h3>Number Of Computer : {numberOfComputers}</h3>
             <input type="number" value={number} onChange={(e) => setNumber(e.target.value)}/>
-            <button onClick={()=>dispatch(sellComputer())}>Sell Computer</button>
+            <button onClick={()=>dispatch(sellComputer(number))}>Sell Computer</button>
         </div>
     )
 }
