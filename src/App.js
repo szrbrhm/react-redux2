@@ -3,6 +3,7 @@ import './App.css';
 import Computer from './components/Computer';
 import Laptop from './components/Laptop';
 import Phone from './components/Phone';
+import Watch from './components/Watch';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
      <Laptop/>
      <Phone/>
      <Computer/>
+     <Watch/>
     </div>
   );
 }
