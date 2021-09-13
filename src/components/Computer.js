@@ -7,7 +7,7 @@ const Computer = () => {
     const dispatch = useDispatch()
     return (
         <div className="container">
-            <h2>Phones -- Hooks ---</h2>
+            <h2>Computers -- Hooks ---</h2>
             <h3>Number Of Computer : {numberOfComputers}</h3>
             <button onClick={()=>dispatch(sellComputer())}>Sell Computer</button>
         </div>
