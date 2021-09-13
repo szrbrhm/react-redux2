@@ -1,4 +1,4 @@
-import { SELL_LAPTOP, SELL_COMPUTER, SELL_WATCH, SELL_PHONE } from "../types/types";
+import { SELL_LAPTOP, SELL_COMP, SELL_WATCH, SELL_PHONE } from "../types/Types"
 
 export const sellLaptop = () => {
     return{
@@ -8,7 +8,7 @@ export const sellLaptop = () => {
 
 export const sellComputer = () => {
     return{
-        type: SELL_COMPUTER
+        type: SELL_COMP
     };
 };
 
