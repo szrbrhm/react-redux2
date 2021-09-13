@@ -4,22 +4,22 @@ export const sellLaptop = () => {
     return{}
         type: SELL_LAPTOP
     }
-}
+};
 
 export const sellComputer = () => {
     return{}
         type: SELL_COMPUTER
     }
-}
+};
 
 export const sellPhone = () => {
     return{}
         type: SELL_PHONE
     }
-}
+};
 
 export const sellWatch = () => {
     return{}
         type: SELL_WATCH
     }
-}
+};
