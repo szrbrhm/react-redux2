@@ -7,9 +7,10 @@ export const sellLaptop = (number=1) => {
     };
 };
 
-export const sellComputer = () => {
+export const sellComputer = (number=1) => {
     return{
-        type: SELL_COMP
+        type: SELL_COMP,
+        payload: number,
     };
 };
 

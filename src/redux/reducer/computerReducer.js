@@ -9,7 +9,7 @@ const computerReducer = (state = initialState, action) => {
     case SELL_COMP:
       return {
         ...state,
-        numberOfComputers: state.numberOfComputers - 1,
+        numberOfComputers: state.numberOfComputers - action.payload,
       };
 
     default:
