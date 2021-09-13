@@ -1,25 +1,25 @@
 import { SELL_LAPTOP, SELL_COMPUTER, SELL_WATCH, SELL_PHONE } from "../types/types";
 
 export const sellLaptop = () => {
-    return{}
+    return{
         type: SELL_LAPTOP
-    }
+    };
 };
 
 export const sellComputer = () => {
-    return{}
+    return{
         type: SELL_COMPUTER
-    }
+    };
 };
 
 export const sellPhone = () => {
-    return{}
+    return{
         type: SELL_PHONE
-    }
+    };
 };
 
 export const sellWatch = () => {
-    return{}
+    return{
         type: SELL_WATCH
-    }
+    };
 };
