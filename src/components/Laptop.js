@@ -1,15 +1,17 @@
-import React, {dispatch} from 'react';
+import React, {useState} from 'react';
 import { connect } from 'react-redux';
 import { sellLaptop } from '../redux/action/Action';
 
 
 const Laptop = (props) => {
-    console.log(props)
+    const [number, setNumber] = useState(1)
+    // console.log(props)
     return (
         <div className="container">
             <h2>Laptops Pure Redux</h2>
             <h3>Number Of Laptops : {props.numberOfLaptops}</h3>
-            <button onClick={sellLaptop()}>Sell Laptop</button>
+            <input type="number" value={number} onChange={(e) => setNumber(e.target.value)}/>
+            <button onClick={()=>props.sellLaptop(number)}>Sell Laptop</button>
             
         </div>
     )
@@ -23,7 +25,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-      sellLaptop: () => dispatch(sellLaptop()),
+      sellLaptop: (number) => dispatch(sellLaptop(number)),
     };
   };
   export default connect(mapStateToProps, mapDispatchToProps)(Laptop);

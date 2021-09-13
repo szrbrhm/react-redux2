@@ -1,8 +1,9 @@
 import { SELL_LAPTOP, SELL_COMP, SELL_WATCH, SELL_PHONE } from "../types/Types"
 
-export const sellLaptop = () => {
+export const sellLaptop = (number=1) => {
     return{
-        type: SELL_LAPTOP
+        type: SELL_LAPTOP,
+        payload: number
     };
 };
 
@@ -12,9 +13,10 @@ export const sellComputer = () => {
     };
 };
 
-export const sellPhone = () => {
+export const sellPhone = (number = 1) => {
     return{
-        type: SELL_PHONE
+        type: SELL_PHONE,
+        payload: number,
     };
 };
 
