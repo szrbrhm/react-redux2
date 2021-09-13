@@ -1,7 +1,7 @@
 import { SELL_WATCH } from "../types/Types";
 
 const initialState = {
-  numberOfWatch: 100,
+  numberOfWatch: 300,
 };
 
 const watchReducer = (state = initialState, action) => {

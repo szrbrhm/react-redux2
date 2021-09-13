@@ -1,7 +1,7 @@
 import { SELL_COMP} from "../types/Types";
 
 const initialState = {
-  numberOfComputers: 100,
+  numberOfComputers: 400,
 };
 
 const computerReducer = (state = initialState, action) => {

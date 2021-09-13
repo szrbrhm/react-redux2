@@ -6,7 +6,7 @@ import { sellLaptop } from '../redux/action/Action';
 const Laptop = (props) => {
     console.log(props)
     return (
-        <div>
+        <div className="container">
             <h2>Laptops Pure Redux</h2>
             <h3>Number Of Laptops : {props.numberOfLaptops}</h3>
             <button onClick={sellLaptop()}>Sell Laptop</button>
